@@ -1,11 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Nav from './components/nav'
-import FirstLook from './components/FirstLook'
-
+import Nav from './components/Nav'
+import HomePage from './pages/HomePage'
+ 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Nav />
-    <FirstLook />
+    <HomePage/>
   </StrictMode>,
 )

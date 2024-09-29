@@ -12,17 +12,17 @@ const nav = () => {
       </div>
       <div className="links">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#Home">Domov</a></li>
+          <li><a href="#About">O nás</a></li>
+          <li><a href="#Subscription">Předplatné</a></li>
+          <li><a href="#Contact">Kontakt</a></li>
         </ul>
       </div>
      </div>
      <div className="links">
       <ul>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Register</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/register">Register</a></li>
       </ul>
      </div>
     </nav>
