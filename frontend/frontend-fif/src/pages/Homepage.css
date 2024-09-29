@@ -55,6 +55,83 @@ div h1 span{
 #About #img1{
   width: 50%;
 }
-/* About section */
+/* Subscription section */
 
+#Subscription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
 
+.subscription-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.subscription-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.subscription-container p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.premium-subscription {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.premium-subscription h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.premium-subscription ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.premium-subscription li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.premium-subscription li:before {
+  content: "\2713";
+  font-size: 18px;
+  color: #4CAF50;
+  margin-right: 10px;
+}
+
+.subscribe-button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.subscribe-button:hover {
+  background-color: #3e8e41;
+}
