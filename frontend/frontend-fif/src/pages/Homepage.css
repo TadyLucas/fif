@@ -36,7 +36,7 @@ div h1 span{
 
 /* About section */
 #About {
-  background-color:cornsilk;
+  background-color: #F5F5F5;
 }
 #About div{
   display: flex;
@@ -65,6 +65,7 @@ div h1 span{
   width: 100%;
   padding: 0;
   margin: 0;
+  background-color: #F5FEFD; 
 }
 
 .subscription-container {
@@ -134,4 +135,109 @@ div h1 span{
 
 .subscribe-button:hover {
   background-color: #3e8e41;
+}
+
+/* Contact section #F3F2ED*/
+
+#SocialMedia {
+  background-color: #F3F2ED; /* or any other background color you prefer */
+  padding: 20px;
+  text-align: center;
+}
+
+#SocialMedia h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#SocialMedia ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#SocialMedia li {
+  margin: 0 20px;
+}
+
+#SocialMedia a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+#SocialMedia a:hover {
+  color: #666;
+}
+
+#SocialMedia svg {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+
+/* SVGs */
+.custom-shape-divider-top-1727712980 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  margin-top: -10px; /* Adjust this value to remove extra spacing between sections */
+  background-color: #F5FEFD;
+}
+
+.custom-shape-divider-top-1727712980 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1727712980 .shape-fill {
+  fill: #F5F5F5; /* You can adjust the color to fit your design */
+}
+
+
+.custom-shape-divider-bottom-1727714667 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1727714667 svg {
+    position: relative;
+    display: block;
+    width: calc(190% + 1.3px);
+    height: 170px;
+}
+
+.custom-shape-divider-bottom-1727714667 .shape-fill {
+    fill: #F5F5F5;
+}
+
+
+
+
+.custom-shape-divider-top-1727715528 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  background-color: #F4F4F0;
+}
+
+.custom-shape-divider-top-1727715528 svg {
+  position: relative;
+  display: block;
+  width: calc(116% + 1.3px);
+  height: 194px;
+}
+
+.custom-shape-divider-top-1727715528 .shape-fill {
+  fill: #F5FEFD;
 }

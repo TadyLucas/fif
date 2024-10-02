@@ -2,6 +2,9 @@ import React from "react";
 import logo from '../assets/logo-rmBg.png'
 import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 import "../components/nav.css"
+import { Link, Route, Routes } from 'react-router-dom'
+import Login from '../pages/Login'
+import Register from '../pages/Register'
 
 const nav = () => {
   return (
@@ -15,14 +18,14 @@ const nav = () => {
           <li><a href="#Home">Domov</a></li>
           <li><a href="#About">O nás</a></li>
           <li><a href="#Subscription">Předplatné</a></li>
-          <li><a href="#Contact">Kontakt</a></li>
+          <li><a href="#SocialMedia">Kontakt</a></li>
         </ul>
       </div>
      </div>
      <div className="links">
       <ul>
-        <li><a href="/login">Login</a></li>
-        <li><a href="/register">Register</a></li>
+        <li><Link to="/login">Login</Link></li>
+        <li><Link to="/register">Register</Link></li>
       </ul>
      </div>
     </nav>
