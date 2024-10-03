@@ -6,6 +6,8 @@ import { Link, Route, Routes } from 'react-router-dom'
 import Login from '../pages/Login'
 import Register from '../pages/Register'
 
+
+
 const nav = () => {
   return (
     <nav className=" navbar-light">
@@ -14,13 +16,25 @@ const nav = () => {
         <img src={logo} alt="" />
       </div>
       <div className="links">
-        <ul>
-          <li><a href="#Home">Domov</a></li>
-          <li><a href="#About">O nás</a></li>
-          <li><a href="#Subscription">Předplatné</a></li>
-          <li><a href="#SocialMedia">Kontakt</a></li>
-        </ul>
-      </div>
+  <ul>
+    <li><a href="#Home" onClick={(e) => {
+      e.preventDefault();
+      window.location.href = "/#Home";
+    }}>Domov</a></li>
+    <li><a href="#About" onClick={(e) => {
+      e.preventDefault();
+      window.location.href = "/#About";
+    }}>O nás</a></li>
+    <li><a href="#Subscription" onClick={(e) => {
+      e.preventDefault();
+      window.location.href = "/#Subscription";
+    }}>Předplatné</a></li>
+    <li><a href="#SocialMedia" onClick={(e) => {
+      e.preventDefault();
+      window.location.href = "/#SocialMedia";
+    }}>Kontakt</a></li>
+  </ul>
+</div>
      </div>
      <div className="links">
       <ul>
