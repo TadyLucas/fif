@@ -57,7 +57,14 @@ function Ww2() {
             paddingBottom: 20,
           }}
         >
-          <h2>Pravidla hry</h2>
+          <h2
+            style={{
+              marginTop: 30,
+              paddingTop: 40,
+            }}
+          >
+            Pravidla hry
+          </h2>
           <ul>
             <li>Rule 1</li>
             <li>Rule 2</li>

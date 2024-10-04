@@ -5,7 +5,7 @@ import Nav from './components/Nav';
 import HomePage from './pages/HomePage';
 import Login from './pages/Login';
 import Register from './pages/Register';
-import Ww2 from "./pages/games/ww2"
+import Ww2 from "./pages/games/Ww2"
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

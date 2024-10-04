@@ -38,25 +38,31 @@ div h1 span{
 }
 
 /* About section */
+.text1{
+  display: flex;
+  flex-direction: column !important;
+}
+
 #About {
   background-color: #F5F5F5;
 }
 #About div{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 50px 10% 50px 10%;
 }
 #About div div{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
-#About #img1 img{
-  width: 150%;
+#About .img1 img{
+  width: 100% ;
   border-radius: 5px;
 } 
-#About #img1{
-  width: 50%;
+#About .img1{
+  width: 200%;
+  margin: 20px 0;
 }
 /* Subscription section */
 
@@ -239,7 +245,16 @@ div h1 span{
   width: calc(116% + 1.3px);
   height: 194px;
 }
-
-.custom-shape-divider-top-1727715528 .shape-fill {
+@media (max-width: 768px){
+  #About div div:first-child{
+    flex-direction: column-reverse;
+    margin-bottom: 0;
+  }
+  #About div:first-child{
+    margin-bottom: 20px;
+  }
+  #About .img1 img{
+    width: 50%;
+  }
   
 }

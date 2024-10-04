@@ -1,52 +1,125 @@
+/* Global styles */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-
-body{
+body {
   margin: 0;
   padding: 0;
 }
 
-nav{
+nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height:80px;
+  align-items: center;
+  height: 80px;
   width: 100%;
-  background-color: #f8f8ff ;
+  background-color: #f8f8ff;
+  padding: 0 20px;
 }
+
 nav img {
   width: 80px;
 }
-nav div ul{
+
+nav div ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
-nav div ul{
+
+nav div ul {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* Row layout for nav items */
   gap: 20px;
 }
-nav .links{
-  margin: auto 0 auto 0;
+
+nav .links {
+  display: flex;
+  align-items: center;
 }
-nav .links ul{
-  margin: auto 0 ;
-}
+
 nav ul li a {
   text-decoration: none !important;
-  font-family:"Open Sans", sans-serif ;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   color: #333;
   font-weight: bold;
-  
-}
-nav div:last-child{
-  margin-right: 20px;
-}
-nav div:first-child{
-  margin-left: 10px;
-}
-nav .nav-left{
-  display: flex;
-  flex-direction: row;
 }
 
+nav div:last-child {
+  margin-right: 20px;
+}
+
+nav div:first-child {
+  margin-left: 10px;
+}
+
+nav .nav-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Align logo and links vertically */
+}
+
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: row;
+  }
+
+  .nav-left {
+    flex: 1;
+    justify-content: space-between;
+  }
+
+  .menu-icon {
+    display: block; /* Show hamburger menu on mobile */
+  }
+
+  .nav-links {
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #f8f8ff;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+  }
+
+  .nav-links.active {
+    max-height: 300px; /* Arbitrary height that fits the content */
+    opacity: 1; /* Fade-in effect */
+  }
+
+  nav div ul {
+    flex-direction: column; /* Stack nav items vertically on mobile */
+    gap: 10px;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+  .menu-icon {
+    display: none; /* Hide hamburger menu on larger screens */
+  }
+
+  .nav-links {
+    display: flex; /* Show full nav on larger screens */
+    max-height: none; /* No height restriction */
+    opacity: 1; /* Always visible */
+  }
+
+  nav div ul {
+    flex-direction: row; /* Nav items in a row on larger screens */
+    gap: 20px;
+  }
+}
