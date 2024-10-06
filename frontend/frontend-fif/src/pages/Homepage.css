@@ -61,11 +61,46 @@ div h1 span{
   border-radius: 5px;
 } 
 #About .img1{
-  width: 200%;
+  width: 100%;
+  height: 250px;
   margin: 20px 0;
+  display: flex;
+  align-items: center;
+  min-width: 30%;
 }
-/* Subscription section */
+#About .text1 {
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
 
+#About .text1 h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#About .text1 p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+#About .text1 h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #019642;
+  margin: 10px auto;
+}
+
+
+/* Subscription section */
 #Subscription {
   display: flex;
   justify-content: center;
@@ -246,15 +281,37 @@ div h1 span{
   height: 194px;
 }
 @media (max-width: 768px){
-  #About div div:first-child{
-    flex-direction: column-reverse;
-    margin-bottom: 0;
+  #About .text1 {
+    padding: 20px;
   }
-  #About div:first-child{
+  
+  #About .text1 h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  #About .text1 p {
+    font-size: 16px;
     margin-bottom: 20px;
   }
-  #About .img1 img{
-    width: 50%;
+  
+  #About .img1 {
+    width: 100%;
+    height: 150px;
+    margin: 10px 0;
+  }
+  
+  #About .img1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  #About div div{
+    flex-direction: column-reverse;
+    margin-left: 0;
+    margin-right: 0;
   }
   
 }
