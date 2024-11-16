@@ -28,8 +28,9 @@ app.use(bodyParser.json());
 
 app.post('/register', async (req, res) => {
     const { email, username, password, rePassword } = req.body;
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     if (password !== rePassword) return res.status(400).json({ message: 'Passwords do not match' });
-
+    if (emailRegex.test(email) === false) return res.status(400).json({ message: 'Invalid email format' });
     const hashedPassword = await bcrypt.hash(password, 10);
     try {
         const user = new User({ email, username, password: hashedPassword });

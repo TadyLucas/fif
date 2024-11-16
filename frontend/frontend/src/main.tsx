@@ -8,6 +8,7 @@ import Register from "./pages/Register";
 import Ww2 from "./pages/games/Ww2";
 import Dashboard from "./pages/Dashboard";
 import PrivateRoute from "./components/PrivateRoute";
+import "./index.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

@@ -8,7 +8,7 @@ const Login: React.FC = () => {
   const [loggedIn, setLoggedIn] = useState(false);
   const navigate = useNavigate();
 
-  const checkToken = () => {
+  const checkToken = () => {  
     const token = localStorage.getItem('token');
     setLoggedIn(!!token);
   }

@@ -1,0 +1,28 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+h2 {
+  margin: 30px 0 20px 40px;
+  font-weight: bold;
+}
+
+.container-games {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  padding: 0 40px;
+}
+
+.game img {
+  max-width: 350px;
+}
+
+.game {
+  background-color: #faf9f8;
+  border-radius: 20px;
+  padding: 20px;
+}
