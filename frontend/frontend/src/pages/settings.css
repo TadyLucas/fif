@@ -1,0 +1,13 @@
+.change-password {
+  width: 33%;
+  margin-left: 80px;
+}
+.toggle-header {
+  display: flex;
+  flex-direction: row;
+}
+.toggle-header span {
+  margin-top: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+}

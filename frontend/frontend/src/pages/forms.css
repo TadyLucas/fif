@@ -8,6 +8,7 @@
   border: 1px solid #ddd;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  width: 100%;
 }
 
 /* Form styles */
@@ -25,7 +26,8 @@ label {
   display: block;
   margin-bottom: 10px;
   font-weight: bold;
-  color: #666;
+  color: #241f1feb;
+  font-size: 17px;
 }
 
 /* Input field styles */
@@ -40,6 +42,7 @@ input[type="password"] {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
+  background-color: rgba(255, 255, 255, 0 747);
 }
 
 input[type="email"]:focus,
@@ -54,7 +57,7 @@ input[type="password"]:focus {
 button[type="submit"] {
   width: 100%;
   padding: 10px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: #fff;
   border: none;
   border-radius: 5px;
