@@ -16,11 +16,11 @@
   justify-content: flex-end;
   padding-top: 50px;
 
-  background-image: url("../assets/loginbgGreen.jpg");
+  background-image: url("../assets/bgloginRetro.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 92vh;
+  height: 100vh;
   width: 100%;
 }
 .logo img {

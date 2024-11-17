@@ -1,6 +1,7 @@
 import "./Homepage.css";
 import imgPlaceholder from "../assets/placeholder.jpg";
 import Footer from "../components/Footer";
+import InstagramEmbed from "../components/InstagramEmbed";
 
 const HomePage = () => {
   return (
@@ -62,19 +63,10 @@ const HomePage = () => {
           ></path>
         </svg>
       </div>
-      <section id="Subscription">
-        <div className="subscription-container">
-          <h2>Subscribe to Premium</h2>
-          <p>Get exclusive benefits with our Premium subscription</p>
-          <div className="premium-subscription">
-            <h3>Premium</h3>
-            <ul>
-              <li>Ad-free experience</li>
-              <li>Priority customer support</li>
-              <li>Exclusive content</li>
-            </ul>
-            <button className="subscribe-button">Subscribe now</button>
-          </div>
+      <section id="LastVideo">
+        <div className="video-container">
+          <h2>Naše poslední video</h2>
+          <InstagramEmbed postUrl="https://www.instagram.com/reel/DBduwPQoMOo/" />
         </div>
       </section>
       <Footer shapeColor="#F4F4F0" bgColor="#F5FEFD" />
