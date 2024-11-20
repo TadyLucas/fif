@@ -26,13 +26,17 @@ h2 {
   border-radius: 20px;
   padding: 20px;
 }
-.links ul li{
+.links ul li {
   list-style: none;
 }
-.links ul li a{
+.links ul li a {
   text-decoration: none;
-  color:rgba(51,51,51)
+  color: rgba(51, 51, 51);
 }
-.links{
+.links {
   margin-top: 10px;
+}
+h2 {
+  padding-top: 30px;
+  font-size: 40px;
 }
