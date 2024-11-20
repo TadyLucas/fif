@@ -64,11 +64,13 @@ function Ww2() {
                 paddingTop: 40,
               }}
             >
-              Pravidla hry
+              Pravidla a vysvětlivky k našim hrám
             </h2>
             <ul>
-              <li>Rule 1</li>
-              <li>Rule 2</li>
+              <li>Hra se hraje pouze pomocí počítačové myši.</li>
+              <li>Postupujete podle pokynů které vám dává panáček.</li>
+              <li>Plníte dané úkoly a hádanky.</li>
+              <li>Při nalezení chyby se vraťte zpátky na start.</li>
             </ul>
             <h2>O hře</h2>
             <p>
