@@ -4,9 +4,13 @@
 body {
   color: #37323e !important;
 }
+
 /* Hero section */
 section #logo {
   width: 85%;
+}
+#Home {
+  padding-top: 20vh;
 }
 section {
   display: flex;
@@ -44,6 +48,7 @@ div h1 span {
 
 #About {
   background-color: #f5f5f5;
+  padding-top: 5vh;
 }
 #About div {
   display: flex;
@@ -53,11 +58,14 @@ div h1 span {
 #About div div {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 #About .img1 img {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 20px;
+  max-height: 60vh;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 #About .img1 {
   width: 100%;
@@ -65,6 +73,7 @@ div h1 span {
   margin: 20px 0;
   display: flex;
   align-items: center;
+  justify-content: center;
   min-width: 30%;
 }
 #About .text1 {
@@ -105,15 +114,14 @@ div h1 span {
   align-items: center;
   height: 100vh;
   width: 100%;
-  padding: 0;
-  margin: 0 0 20vh 0;
-  background-color: #f5fefd;
+  padding: 0 0 300px 0;
+  margin-top: 200px;
 }
 
 .video-container {
   margin: 0 auto;
   padding: 30px;
-  width: 60vh;
+  width: 50vh;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -126,6 +134,7 @@ div h1 span {
   padding-top: 20px;
   text-align: center;
   color: #333;
+  margin: 0 0 20px 0;
 }
 @media screen and (max-width: 768px) {
   .video-container {
@@ -140,11 +149,6 @@ div h1 span {
   background-color: #f3f2ed; /* or any other background color you prefer */
   padding: 20px;
   text-align: center;
-}
-
-#SocialMedia h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
 }
 
 #SocialMedia ul {
@@ -173,6 +177,10 @@ div h1 span {
   font-size: 24px;
   margin-right: 10px;
 }
+#SocialMedia h2 {
+  font-size: 30px;
+  margin: 20px 0 20px 0 !important;
+}
 
 /* SVGs */
 .custom-shape-divider-top-1727712980 {
@@ -181,7 +189,7 @@ div h1 span {
   overflow: hidden;
   line-height: 0;
   margin-top: -10px; /* Adjust this value to remove extra spacing between sections */
-  background-color: #f5fefd;
+  background-color: #fff;
 }
 
 .custom-shape-divider-top-1727712980 svg {
@@ -228,14 +236,20 @@ div h1 span {
   width: calc(116% + 1.3px);
   height: 194px;
 }
+custom-shape-divider-top-1727715528 .shape-fill {
+  background-color: #fff;
+}
 @media (max-width: 768px) {
+  #Home {
+    padding-top: 10vh;
+  }
   #About .text1 {
     padding: 20px;
   }
 
   #About .text1 h2 {
     font-size: 22px;
-    margin-bottom: 10px;
+    margin: 10px;
   }
 
   #About .text1 p {
@@ -249,16 +263,28 @@ div h1 span {
     margin: 10px 0;
   }
 
-  #About .img1 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-
   #About div div {
     flex-direction: column-reverse;
     margin-left: 0;
     margin-right: 0;
+  }
+  #SocialMedia h2 {
+    font-size: 22px;
+    margin: 20px 0 20px 0;
+  }
+  #SocialMedia span {
+    font-size: 16px;
+  }
+  #SocialMedia {
+    padding: 20px 0;
+  }
+  .img1 img {
+    height: 40vh;
+    width: 30vh !important;
+    object-fit: cover;
+  }
+  .img1 {
+    padding: 20vh 0;
+    margin: 0;
   }
 }

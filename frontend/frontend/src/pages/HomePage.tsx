@@ -1,5 +1,5 @@
 import "./Homepage.css";
-import imgPlaceholder from "../assets/placeholder.jpg";
+import mindlHacker from "../assets/mindlHacker.jpg";
 import Footer from "../components/Footer";
 import InstagramEmbed from "../components/InstagramEmbed";
 
@@ -21,7 +21,7 @@ const HomePage = () => {
         <div>
           <div>
             <div className="img1">
-              <img src={imgPlaceholder} alt="" />
+              <img src={mindlHacker} alt="" />
             </div>
             <div className="text1">
               <h2>O naší firmě</h2>
@@ -69,7 +69,7 @@ const HomePage = () => {
           <InstagramEmbed postUrl="https://www.instagram.com/reel/DBduwPQoMOo/" />
         </div>
       </section>
-      <Footer shapeColor="#F4F4F0" bgColor="#F5FEFD" />
+      <Footer shapeColor="#F4F4F0" bgColor="#fff" />
     </>
   );
 };
