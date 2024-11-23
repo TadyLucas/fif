@@ -1,5 +1,5 @@
 import FormField from "../components/Form";
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/loog-rmBg.png";
 import "./LogReg.css";
@@ -7,12 +7,13 @@ import "./LogReg.css";
 const Login: React.FC = () => {
   const [message, setMessage] = useState("");
   const [clr, setClr] = useState("red");
-  const [loggedIn, setLoggedIn] = useState(false);
   const navigate = useNavigate();
 
   const checkToken = () => {
     const token = localStorage.getItem("token");
-    setLoggedIn(!!token);
+    if (token) {
+      navigate("/dashboard");
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

@@ -1,5 +1,4 @@
 import "./settings.css";
-import React, { useState } from "react";
 import ChangePassword from "../components/Change-password";
 
 const Settings = () => {

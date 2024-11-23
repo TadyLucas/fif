@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import logo from "../assets/logo-rmBg.png";
 import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 import "../components/nav.css";

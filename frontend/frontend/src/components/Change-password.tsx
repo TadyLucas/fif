@@ -1,5 +1,5 @@
 import "../pages/settings.css";
-import React, { useState, FormEvent } from "react";
+import React, { useState} from "react";
 
 const ChangePassword: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
