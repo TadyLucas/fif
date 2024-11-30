@@ -7,9 +7,13 @@ const cors = require("cors");
 const authenticateToken = require("./middleware/authMiddleware");
 
 const app = express();
-const PORT = 5000;
-const JWT_SECRET =
-  "4b8d933d6a3c7e677df8b1a2341c7fe5838e0d4886587fc87903292f09109a5b";
+require('dotenv').config();  // Load environment variables from the .env file
+
+const JWT_SECRET = process.env.JWT_SECRET;
+const MONGO_URI = process.env.MONGO_URI;
+const PORT = process.env.PORT || 5000;
+
+mongoose.connect(MONGO_URI).then(() => console.log("Connected to MongoDB"));
 
 app.use(cors());
 
